@@ -204,9 +204,8 @@
       "id": 1,
       "project_name": "Tortor Dictum Institute",
       "repo_url": "https://",
-      "client": "Phasellus Limited",
+      "client": "Andres Jaramillo",
       "developers": "Victor Hugo Conto Carvajal|Jurgen David Lozano Valencia|Sandra Lorena Buitrón Ruiz|Sandra Lorena Buitrón Ruiz|Breyner Albarracín Lozada",
-      "ci": false,
       "cd": false,
       "frontend_tecnology": "React|React-Native",
       "backend_tecnology": ".Net, NodeJS",
@@ -2013,40 +2012,12 @@
   ],
   "users": [
     {
-      "id": 1,
-      "name": "Camilla",
-      "last_name": "Wooten",
-      "url_photo": "",
-      "rol": 1,
-      "list": "Java|.Net|Python|Angular|React-Native|VueJS|NodeJS|SQLServer",
-      "area": "Soporte"
-    },
-    {
-      "id": 2,
-      "name": "Grady",
-      "last_name": "Stevens",
-      "url_photo": "",
-      "rol": 1,
-      "list": "VueJS|Angular|.Net|React-Native|React|Java|Python|SQLServer|NodeJS",
-      "area": "Soporte"
-    },
-    {
-      "id": 3,
-      "name": "Ali",
-      "last_name": "Barlow",
-      "url_photo": "",
-      "rol": 1,
-      "list": "React|React-Native|VueJS|Python|NodeJS|.Net|Angular|SQLServer",
-      "area": "Staff"
-    },
-    {
       "id": 4,
-      "name": "Whilemina",
+      "name": "William",
       "last_name": "George",
-      "url_photo": "",
-      "rol": 1,
+      "area": "Soporte",
       "list": "SQLServer|Python|NodeJS|React-Native|VueJS|.Net|Angular|Java|React",
-      "area": "Staff"
+      "rol": 1
     },
     {
       "id": 5,
@@ -2911,6 +2882,23 @@
       "rol": 1,
       "list": "React-Native|VueJS|React|SQLServer|Java|Angular",
       "area": "Soporte"
+    },
+    {
+      "name": "Andres",
+      "url_photo": "",
+      "last_name": "Jaramillo",
+      "area": "Soporte",
+      "list": "Java",
+      "rol": 1,
+      "id": 101
+    },
+    {
+      "name": "Jean",
+      "last_name": "Vega",
+      "area": "Soporte",
+      "list": "Java",
+      "rol": 1,
+      "id": 103
     }
   ]
 }

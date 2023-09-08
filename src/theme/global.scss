@@ -1,3 +1,213 @@
 @use 'tailwindcss/base';
 @use 'tailwindcss/utilities';
 @use 'tailwindcss/components';
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #111927;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.swal2-close:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.error-title {
+  padding: 0px !important;
+  font-size: 26px !important;
+  font-family: 'Plus Jakarta Sans' !important;
+  color: #ff7885 !important;
+}
+
+.success-title {
+  padding: 0px !important;
+  font-size: 26px !important;
+  font-family: 'Plus Jakarta Sans' !important;
+  color: #6366f1 !important;
+}
+
+.error-select {
+  border-radius: 30px;
+  border: 1px solid #ff7885 !important;
+}
+
+.error-content {
+  font-size: 18px !important;
+  text-align: center !important;
+  font-family: 'Plus Jakarta Sans' !important;
+  color: #110826 !important;
+}
+
+.error-close-button {
+  outline: none !important;
+  color: black !important;
+  &:focus {
+    box-shadow: none !important;
+  }
+}
+
+.error-deny-button {
+  width: 340px !important;
+  padding: 7px !important;
+  outline: none !important;
+  font-size: 16px !important;
+  border-radius: 15px !important;
+  font-family: 'Plus Jakarta Sans' !important;
+  color: #fff !important;
+  background-color: #ff7885 !important;
+  border: 1px solid #ff7885 !important;
+  &:focus {
+    box-shadow: none !important;
+  }
+  &:hover {
+    background-image: none !important;
+    color: #ff7885 !important;
+    background-color: #fff !important;
+  }
+}
+
+.error-question-button {
+  width: 340px !important;
+  padding: 7px !important;
+  outline: none !important;
+  font-size: 16px !important;
+  border-radius: 15px !important;
+  font-family: 'Plus Jakarta Sans' !important;
+  background-image: none !important;
+  color: #6366f1 !important;
+  background-color: #fff !important;
+  border: 1px solid #6366f1 !important;
+  &:focus {
+    box-shadow: none !important;
+  }
+  &:hover {
+    color: #fff !important;
+    background-color: #6366f1 !important;
+    border: 1px solid #6366f1 !important;
+  }
+}
+
+.error-select {
+  border-radius: 5px;
+  border: 1px solid #ff7885 !important;
+}
+
+.success-select {
+  border-radius: 5px;
+  border: 1px solid #bcc9d9 !important;
+}
+
+.isScroll {
+  overflow-y: scroll;
+  margin-right: 5px;
+  scrollbar-color: #6366f1;
+}
+
+.isScroll::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+.isScroll::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #6366f1;
+}
+
+.isScroll::-webkit-scrollbar-thumb:hover {
+  background: #6366f1;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.isScroll::-webkit-scrollbar-thumb:active {
+  background: #6366f1;
+}
+
+.isScroll::-webkit-scrollbar-track {
+  border-radius: 4px;
+  background: transparent;
+}
+
+.color {
+  color: #10b981;
+}
+
+table.fold-table {
+  width: 100%;
+  padding: 2px;
+  border-spacing: 0;
+  border-collapse: separate;
+  background-color: var(--color-background);
+  th {
+    text-align: start;
+    border-bottom: 1px solid #d7dfe8;
+  }
+}
+
+table.fold-table {
+  > tbody {
+    > tr.view {
+      td,
+      th {
+        cursor: pointer;
+        border-bottom: 1px solid #d7dfe8;
+      }
+    }
+    > tr.fold {
+      display: none;
+      &.open {
+        display: table-row;
+        border-bottom: none;
+      }
+    }
+  }
+  tr:last-child {
+    border-bottom: 2px solid #d7dfe8;
+  }
+}
+
+table.fold-table {
+  > tbody {
+    > tr.view:nth-last-child(1) {
+      td,
+      th {
+        border-bottom: none;
+      }
+    }
+    > tr.fold {
+      display: none;
+      &.open {
+        display: table-row;
+        border-bottom: none;
+      }
+    }
+  }
+  tr:last-child {
+    border-bottom: 2px solid #d7dfe8;
+  }
+}
+
+.table-responsive {
+  height: 200px;
+  overflow: auto;
+}
+
+.fold-content {
+  > table {
+    border: 2px solid #ccc;
+    > tbody {
+      tr:nth-child(even) {
+        background: #eee;
+      }
+    }
+  }
+}
+
+table.scroll > thead tr th {
+  top: 0;
+  z-index: 10;
+  position: sticky;
+  background-color: black;
+}
